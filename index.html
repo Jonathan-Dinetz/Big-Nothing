@@ -9,21 +9,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-
-
   <body id=body>
 
     <video autoplay muted loop id=video class='hidden myVideo'>
-      <source src="interstate.mp4" type="video/mp4">
+      <source src="interstateposter.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
 
     <video autoplay muted loop id=video2 class='hidden myVideo'>
+      <source src="qrcode.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <video autoplay muted loop id=video3 class='hidden myVideo'>
+      <source src="speaker.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <video autoplay muted loop id=video4 class='hidden myVideo'>
+      <source src="interstate.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <video autoplay muted loop id=video5 class='hidden myVideo'>
       <source src="bikewheel.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
 
-
+    <video autoplay muted loop id=video6 class='hidden myVideo'>
+      <source src="fuckin.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
 
     <div class=header>
       <p id=jonathan class='bold'>Jonathan Dinetz</p>
@@ -43,9 +59,6 @@
   });
 </script>
 
-
-
-
 <div class='wrapper grid content'>
 <a href='interstateposter.html'>
   <div id='one' class='bigtext topboy'>Interstate Poster</div>
@@ -54,24 +67,17 @@
   <div id='two'class='bigtext'>QR Code </div>
 </a>
 <a href='speakerseries.html'>
-  <div id='four'class='bigtext'> Speaker Series </div>
+  <div id='three'class='bigtext'>Speaker Series </div>
 </a>
 <a href='typebook.html'>
-  <div id='five'class='bigtext'>Type Speciman Book</div>
+  <div id='four'class='bigtext'>Type Speciman Book</div>
 </a>
 <a href='typebook.html'>
-  <div id='six'class='bigtext'>Bicycle Type</div>
+  <div id='five'class='bigtext'>Bicycle Type</div>
 </a>
-
 <a href='strange.html'>
-  <div id='nine'class='bigtext'> Fuckin Around </div>
+  <div id='six'class='bigtext'>Fuckin Around </div>
 </a>
-
-
-
-
-
-
 
 <script>
 	$( "#one" ).mouseenter(function() {
@@ -84,9 +90,6 @@
     $( '#four' ).addClass( "displaynone" )
     $( '#five' ).addClass( "displaynone" )
     $( '#six' ).addClass( "displaynone" )
-    $( '#seven' ).addClass( "displaynone" )
-    $( '#eight' ).addClass( "displaynone" )
-    $( '#nine' ).addClass( "displaynone" )
 });
 
     $( "#one" ).mouseleave(function() {
@@ -99,141 +102,138 @@
       $( '#four' ).removeClass( "displaynone" )
       $( '#five' ).removeClass( "displaynone" )
       $( '#six' ).removeClass( "displaynone" )
-      $( '#seven' ).removeClass( "displaynone" )
-      $( '#eight' ).removeClass( "displaynone" )
-      $( '#nine' ).removeClass( "displaynone" )
-
-
-
 });
 </script>
 
 <script>
-	$( "#two" ).hover(function() {
+	$( "#two" ).mouseenter(function() {
 	  $( '#video2' ).removeClass( "hidden" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#two' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
+    $( '#jonathan' ).addClass( "white" )
+    $( '#about' ).addClass( "white" )
+    $( '#two' ).addClass( "white" )
+    $( '#one' ).addClass( "displaynone" )
+    $( '#three' ).addClass( "displaynone" )
+    $( '#four' ).addClass( "displaynone" )
+    $( '#five' ).addClass( "displaynone" )
+    $( '#six' ).addClass( "displaynone" )
+});
 
+$( "#two" ).mouseleave(function() {
+  $( '#video2' ).addClass( "hidden" )
+  $( '#jonathan' ).removeClass( "white" )
+  $( '#about' ).removeClass( "white" )
+  $( '#two' ).removeClass( "white" )
+  $( '#one' ).removeClass( "displaynone" )
+  $( '#three' ).removeClass( "displaynone" )
+  $( '#four' ).removeClass( "displaynone" )
+  $( '#five' ).removeClass( "displaynone" )
+  $( '#six' ).removeClass( "displaynone" )
 });
 </script>
 
 <script>
-	$( "#three" ).hover(function() {
-    $( '#body' ).toggleClass( "background3" )
-    $( '#jonathan' ).toggleClass( "black" )
-    $( '#about' ).toggleClass( "black" )
-    $( '#three' ).toggleClass( "black" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
-  });
-
-</script>
-
-<script>
-	$( "#four" ).hover(function() {
-    $( '#body' ).toggleClass( "background4" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#four' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
- });
-
-</script>
-
-<script>
-	$( "#five" ).hover(function() {
-    $( '#body' ).toggleClass( "background5" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#five' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
-  });
-
-</script>
-<script>
-	$( "#six" ).hover(function() {
-    $( '#body' ).toggleClass( "background6" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#six' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
-  });
-
-</script>
-
-<script>
-	$( "#eight" ).hover(function() {
-    $( '#body' ).toggleClass( "background8" )
-    $( '#eight' ).toggleClass( "white" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
-
+	$( "#three" ).mouseenter(function() {
+	  $( '#video3' ).removeClass( "hidden" )
+    $( '#jonathan' ).addClass( "white" )
+    $( '#about' ).addClass( "white" )
+    $( '#three' ).addClass( "white" )
+    $( '#one' ).addClass( "displaynone" )
+    $( '#two' ).addClass( "displaynone" )
+    $( '#four' ).addClass( "displaynone" )
+    $( '#five' ).addClass( "displaynone" )
+    $( '#six' ).addClass( "displaynone" )
 });
 
+$( "#three" ).mouseleave(function() {
+  $( '#video3' ).addClass( "hidden" )
+  $( '#jonathan' ).removeClass( "white" )
+  $( '#about' ).removeClass( "white" )
+  $( '#three' ).removeClass( "white" )
+  $( '#one' ).removeClass( "displaynone" )
+  $( '#two' ).removeClass( "displaynone" )
+  $( '#four' ).removeClass( "displaynone" )
+  $( '#five' ).removeClass( "displaynone" )
+  $( '#six' ).removeClass( "displaynone" )
+});
+</script>
+<script>
+	$( "#four" ).mouseenter(function() {
+	  $( '#video4' ).removeClass( "hidden" )
+    $( '#jonathan' ).addClass( "white" )
+    $( '#about' ).addClass( "white" )
+    $( '#four' ).addClass( "white" )
+    $( '#one' ).addClass( "displaynone" )
+    $( '#two' ).addClass( "displaynone" )
+    $( '#three' ).addClass( "displaynone" )
+    $( '#five' ).addClass( "displaynone" )
+    $( '#six' ).addClass( "displaynone" )
+});
+
+$( "#four" ).mouseleave(function() {
+  $( '#video4' ).addClass( "hidden" )
+  $( '#jonathan' ).removeClass( "white" )
+  $( '#about' ).removeClass( "white" )
+  $( '#four' ).removeClass( "white" )
+  $( '#one' ).removeClass( "displaynone" )
+  $( '#two' ).removeClass( "displaynone" )
+  $( '#three' ).removeClass( "displaynone" )
+  $( '#five' ).removeClass( "displaynone" )
+  $( '#six' ).removeClass( "displaynone" )
+});
 </script>
 
 <script>
-	$( "#nine" ).hover(function() {
-    $( '#body' ).toggleClass( "background9" )
-    $( '#nine' ).toggleClass( "white" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "displaynone" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-
+	$( "#five" ).mouseenter(function() {
+	  $( '#video5' ).removeClass( "hidden" )
+    $( '#jonathan' ).addClass( "white" )
+    $( '#about' ).addClass( "white" )
+    $( '#five' ).addClass( "white" )
+    $( '#one' ).addClass( "displaynone" )
+    $( '#three' ).addClass( "displaynone" )
+    $( '#four' ).addClass( "displaynone" )
+    $( '#two' ).addClass( "displaynone" )
+    $( '#six' ).addClass( "displaynone" )
 });
 
+$( "#five" ).mouseleave(function() {
+  $( '#video5' ).addClass( "hidden" )
+  $( '#jonathan' ).removeClass( "white" )
+  $( '#about' ).removeClass( "white" )
+  $( '#five' ).removeClass( "white" )
+  $( '#one' ).removeClass( "displaynone" )
+  $( '#three' ).removeClass( "displaynone" )
+  $( '#four' ).removeClass( "displaynone" )
+  $( '#two' ).removeClass( "displaynone" )
+  $( '#six' ).removeClass( "displaynone" )
+});
 </script>
+<script>
+	$( "#six" ).mouseenter(function() {
+	  $( '#video6' ).removeClass( "hidden" )
+    $( '#jonathan' ).addClass( "white" )
+    $( '#about' ).addClass( "white" )
+    $( '#five' ).addClass( "white" )
+    $( '#one' ).addClass( "displaynone" )
+    $( '#three' ).addClass( "displaynone" )
+    $( '#four' ).addClass( "displaynone" )
+    $( '#five' ).addClass( "displaynone" )
+    $( '#two' ).addClass( "displaynone" )
+});
+
+$( "#six" ).mouseleave(function() {
+  $( '#video6' ).addClass( "hidden" )
+  $( '#jonathan' ).removeClass( "white" )
+  $( '#about' ).removeClass( "white" )
+  $( '#six' ).removeClass( "white" )
+  $( '#one' ).removeClass( "displaynone" )
+  $( '#three' ).removeClass( "displaynone" )
+  $( '#four' ).removeClass( "displaynone" )
+  $( '#five' ).removeClass( "displaynone" )
+  $( '#two' ).removeClass( "displaynone" )
+});
+</script>
+
+
 
 
 

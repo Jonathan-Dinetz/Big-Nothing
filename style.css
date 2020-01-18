@@ -109,66 +109,7 @@ padding:0;
   color: white;
 }
 
-.background1{
-  background-image: url("https://drive.google.com/uc?id=");
-  background-position:top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 
-
-}
-.background2{
-  background-image: url(file:///Users/jonathandinetz%201/Downloads/IMG_7334.gif);
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-    background-size: cover;
-}
-
-.background3{
-  background-image: url('file:///Users/jonathandinetz%201/Documents/Documents%20-%20MacBook%20Pro%20(3)/projects/CODESHIT/my_site/presentable.jpg');
-  background-position:top center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-}
-.background4{
-  background-image: url(file:///Users/jonathandinetz%201/Downloads/IMG_7347.gif);
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.background5{
-  background-image: url('file:///Users/jonathandinetz%201/Downloads/IMG_7383.gif');
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.background6{
-  background-image: url('file:///Users/jonathandinetz%201/Downloads/IMG_7385.gif');
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-.background7{
-  background-image: url(https://www.thisiscolossal.com/wp-content/uploads/2018/04/agif1opt.gif);
-  background-position:top center;
-}
-.background8{
-  background-image: url(https://www.thisiscolossal.com/wp-content/uploads/2018/04/agif1opt.gif);
-  background-position:top center;
-}
-.background9{
-  background-image: url(file:///Users/jonathandinetz%201/Downloads/IMG_6932.gif);
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 /*destop individual work page*/
 .headerwork {
   padding-top: 0.6vw;
