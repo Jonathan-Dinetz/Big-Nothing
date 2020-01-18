@@ -8,21 +8,29 @@
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+
+
+
   <body id=body>
 
+    <video autoplay muted loop id=video class='hidden myVideo'>
+      <source src="interstate.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <video autoplay muted loop id=video2 class='hidden myVideo'>
+      <source src="bikewheel.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
 
 
 
-
-
-
-
-<div class=header >
-  <p  id=jonathan class='bold'>Jonathan Dinetz</p>
-<a href='about.html'>
-  <p id=about class='black'>About + Contact</p>
-</a>
-</div>
+    <div class=header>
+      <p id=jonathan class='bold'>Jonathan Dinetz</p>
+    <a href='about.html'>
+      <p id=about class='black'>About + Contact</p>
+    </a>
+    </div>
 
 <script>
 	$( "#jonathan" ).hover(function() {
@@ -36,7 +44,9 @@
 </script>
 
 
-<div class='wrapper grid'>
+
+
+<div class='wrapper grid content'>
 <a href='interstateposter.html'>
   <div id='one' class='bigtext topboy'>Interstate Poster</div>
 </a>
@@ -61,20 +71,38 @@
 
 
 
+
+
 <script>
-	$( "#one" ).hover(function() {
-	  $( '#body' ).toggleClass( "background1" )
-    $( '#jonathan' ).toggleClass( "white" )
-    $( '#about' ).toggleClass( "white" )
-    $( '#one' ).toggleClass( "white" )
-    $( '#two' ).toggleClass( "displaynone" )
-    $( '#three' ).toggleClass( "displaynone" )
-    $( '#four' ).toggleClass( "displaynone" )
-    $( '#five' ).toggleClass( "displaynone" )
-    $( '#six' ).toggleClass( "displaynone" )
-    $( '#seven' ).toggleClass( "displaynone" )
-    $( '#eight' ).toggleClass( "displaynone" )
-    $( '#nine' ).toggleClass( "displaynone" )
+	$( "#one" ).mouseenter(function() {
+	  $( '#video' ).removeClass( "hidden" )
+    $( '#jonathan' ).addClass( "white" )
+    $( '#about' ).addClass( "white" )
+    $( '#one' ).addClass( "white" )
+    $( '#two' ).addClass( "displaynone" )
+    $( '#three' ).addClass( "displaynone" )
+    $( '#four' ).addClass( "displaynone" )
+    $( '#five' ).addClass( "displaynone" )
+    $( '#six' ).addClass( "displaynone" )
+    $( '#seven' ).addClass( "displaynone" )
+    $( '#eight' ).addClass( "displaynone" )
+    $( '#nine' ).addClass( "displaynone" )
+});
+
+    $( "#one" ).mouseleave(function() {
+  	  $( '#video' ).addClass( "hidden" )
+      $( '#jonathan' ).removeClass( "white" )
+      $( '#about' ).removeClass( "white" )
+      $( '#one' ).removeClass( "white" )
+      $( '#two' ).removeClass( "displaynone" )
+      $( '#three' ).removeClass( "displaynone" )
+      $( '#four' ).removeClass( "displaynone" )
+      $( '#five' ).removeClass( "displaynone" )
+      $( '#six' ).removeClass( "displaynone" )
+      $( '#seven' ).removeClass( "displaynone" )
+      $( '#eight' ).removeClass( "displaynone" )
+      $( '#nine' ).removeClass( "displaynone" )
+
 
 
 });
@@ -82,7 +110,7 @@
 
 <script>
 	$( "#two" ).hover(function() {
-	  $( '#body' ).toggleClass( "background2" )
+	  $( '#video2' ).removeClass( "hidden" )
     $( '#jonathan' ).toggleClass( "white" )
     $( '#about' ).toggleClass( "white" )
     $( '#two' ).toggleClass( "white" )
@@ -206,13 +234,6 @@
 });
 
 </script>
-
-
-
-
-
-
-
 
 
 
