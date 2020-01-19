@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
 
@@ -22,53 +23,50 @@
 
 
 <button class=info id=info>
-Info
+About
+</button>
+
+<button class=contact id=info>
+Contact
 </button>
 
 
 
 
-
 <div id=body2 class='wrappergrid'>
-    <div class='imagepaddding'>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_5129.JPG">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_5562.JPG">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_7367.jpg">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_1885.JPG">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_6314%202.JPG">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_1457.JPG">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_6097.JPG">
-    </div>
-    <div>
-    <img src="file:///Users/jonathandinetz%201/Downloads/IMG_2632%202.JPG">
-    </div>
+
 
 </div>
 
   <div id=supergay class='purple hidden' >
 
-    This is the paragraph to end all paragraphs.  You
-    should feel to have seen such a paragraph in
+    (Please read slowly and dramatically, like a greyhaired cowboy reflecting on a hardy life out on the range): Well, I've been a few things. I've been an actor. Fancy that. An athlete. One time, I ran 110m hurdles in a track meet and crossed the finsh line 40 meters behind everyone else. Hometown crowd.
+    I was in a band for a month. That was sick. Not too long ago, I was dead set on DIY beachball fabrication. True story. Currently, I'm a very smelly graphic design student at RISD trying finish a website at 2:46 am on a Sunday morning. And I could really go for a bath.
+
+
+  </div>
+
+  <div id=superrgay class='purple hidden' >
+
+
+    if you need something done: jdinetz@risd.edu
+    if you need it done immediately: (510)-384-6516
 
 
   </div>
 
   <script>
-  $( "button" ).click(function() {
+  $( "button.info" ).click(function() {
     $( "#supergay" ).slideToggle( "slow", function(){
       $( "#supergay" ).removeClass( "hidden" )
+    });
+  });
+  </script>
+
+  <script>
+  $( "button.contact" ).click(function() {
+    $( "#superrgay" ).slideToggle( "slow", function(){
+      $( "#superrgay" ).removeClass( "hidden" )
     });
   });
   </script>

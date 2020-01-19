@@ -122,6 +122,7 @@ padding:0
   font-size: 16px;
   position: fixed;
   font-family: helvetica;
+  z-index: 10;
 }
 #jonathan{
   transition: transform 200ms ease;
@@ -206,7 +207,10 @@ img {
 
 
 div.purple {
-  padding: 10vw;
+
+  column-count: 2;
+  column-gap: 1.5em;
+  padding: 8vw;
   background-color: black;
   color: white;
   font-family: helvetica;
@@ -216,6 +220,8 @@ div.purple {
   position:fixed;
   width: 100vw;
   margin: 0px;
+  line-height: 1.2;
+
 }
 
 /*all the buttons! */
@@ -290,6 +296,41 @@ button.info:hover {
     background-color: white;
     color: black;
 }
+
+button.contact {
+    bottom: 30px;
+    left: 300px;
+    position: fixed;
+    color: white;
+    border: none;
+    padding: 0.1rem;
+    margin: 0;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition:  transform 500ms ease;
+    background: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+button.contact:focus {
+    outline: 0px solid #fff;
+    outline-offset: -4px;
+}
+
+button.contact:hover {
+    transform: rotate(360deg);
+    background-color: white;
+    color: black;
+}
+
 
 .hidden {
   display: none;
