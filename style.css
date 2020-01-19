@@ -1,12 +1,11 @@
-
+/* video display dont fuck with */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: Arial;
-  font-size: 17px;
+  background: black;
 }
 
 .myVideo {
@@ -31,23 +30,36 @@ body {
 
 
 /*nav bar desktop */
-a:link {
+a:hover {
   text-decoration: none;
 }
+
+a:active {
+  color: black;
+}
+
 a:visited {
+  color: black;
+}
+
+a:hover {
   text-decoration: none;
 }
-html, body {
 
-
-
-margin:0;
-
-padding:0;
-
-
+a {
+  text-decoration: none;
 
 }
+
+
+
+
+html, body {
+margin:0;
+padding:0
+}
+
+
 .red {
   background: red;
 }
@@ -57,23 +69,9 @@ padding:0;
 }
 
 .topboy {
-  padding-top: 7vw;
+  padding-top: 8vw;
 }
 
-.header {
-  padding-top: 0.6vw;
-  padding-left: 6vw;
-  padding-bottom: 0.6vw;
-  width:100%;
-  text-align: left;
-  display: inline-grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: none;
-  color:black;
-  font-size: 16px;
-  position: fixed;
-  font-family: helvetica;
-}
 
 .bold {
   font-weight: bold;
@@ -95,7 +93,7 @@ padding:0;
   font-family: helvetica;
   font-weight: bold;
   letter-spacing: -.023em;
-  color: black;
+  color: white;
   line-height: 1.05;
 }
 
@@ -112,9 +110,9 @@ padding:0;
 
 /*destop individual work page*/
 .headerwork {
-  padding-top: 0.6vw;
-  padding-left: 6vw;
-  padding-bottom: 0.6vw;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 10px;
   width:100%;
   text-align: left;
   display: inline-grid;
@@ -124,6 +122,25 @@ padding:0;
   font-size: 16px;
   position: fixed;
   font-family: helvetica;
+}
+#jonathan{
+  transition: transform 200ms ease;
+}
+#jonathan:hover {
+  transform: skewX(10deg);
+
+}
+
+#about{
+  transition: transform 200ms ease;
+}
+#about:hover {
+  transform: skewX(10deg);
+
+}
+
+.imagepaddding{
+  padding-top: 40px;
 }
 
 .title {
@@ -159,7 +176,7 @@ padding:0;
   max-width: 100%;
   height:auto;
   background-size: cover;
-  padding: 1em;
+  padding: 0em;
 }
 img {
   width: 100%;
@@ -189,44 +206,89 @@ img {
 
 
 div.purple {
-  padding: 20vw;
-  background-color: red;
+  padding: 10vw;
+  background-color: black;
+  color: white;
   font-family: helvetica;
+  font-size: 30px;
+  font-weight: bold;
+  top:70px;
+  position:fixed;
+  width: 100vw;
+  margin: 0px;
 }
 
 /*all the buttons! */
 
 button {
-    display: inline-block;
+    bottom: 30px;
+    left: 6.5vw;
     position: fixed;
     color: white;
     border: none;
-    padding: 1rem 2rem;
+    padding: 0.1rem;
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: none;
     font-family: helvetica;
-    font-style: oblique;
+    font-weight: bold;
     cursor: pointer;
     text-align: center;
-    transition: color 250ms ease-in-out,
-                transform 200ms ease;
-
-    background: none;
+    transition:  transform 500ms ease;
+    background: black;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
 }
 
-.padding {
-  padding-top: 90vh;
-}
 
 button:focus {
     outline: 0px solid #fff;
     outline-offset: -4px;
 }
 
-button:active {
-    transform: rotate(45deg);
+button:hover {
+    transform: rotate(360deg);
+    background-color: white;
+    color: black;
+}
 
+
+
+
+/* button for info */
+button.info {
+    bottom: 30px;
+    left: 35px;
+    position: fixed;
+    color: white;
+    border: none;
+    padding: 0.1rem;
+    margin: 0;
+    font-size: 30px;
+    text-decoration: none;
+    font-family: helvetica;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition:  transform 500ms ease;
+    background: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+button.info:focus {
+    outline: 0px solid #fff;
+    outline-offset: -4px;
+}
+
+button.info:hover {
+    transform: rotate(360deg);
+    background-color: white;
+    color: black;
 }
 
 .hidden {
@@ -284,7 +346,7 @@ button:active {
     max-width: 100%;
     height:auto;
     background-size: cover;
-    padding: 1em;
+    padding: 0em;
   }
   .titletopboy {
     padding-top: 90vh;

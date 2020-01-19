@@ -12,12 +12,65 @@
 <body>
 
   <div class=headerwork >
-    <p id=jonathan class='bold'>Jonathan Dinetz</p>
+    <a href=index.html>
+        <p id=jonathan class='bold'>Jonathan Dinetz</p>
+    </a>
   <a href='about.html'>
     <p id=about class='black'>About + Contact</p>
   </a>
   </div>
 
-  <div>speakerseries</div>
+
+<button class=info id=info>
+Info
+</button>
+
+
+
+
+
+<div id=body2 class='wrappergrid'>
+    <div>
+    <img src="images/IMG_5650.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_2235.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_2705.JPG">
+    </div>
+    <div>
+    <img src="images/IMG_9252.JPG">
+    </div>
+
+
+</div>
+
+  <div id=supergay class='purple hidden' >
+
+    This is the paragraph to end all paragraphs.  You
+    should feel to have seen such a paragraph in
+
+
+  </div>
+
+  <script>
+  $( "button" ).click(function() {
+    $( "#supergay" ).slideToggle( "slow", function(){
+      $( "#supergay" ).removeClass( "hidden" )
+    });
+  });
+  </script>
+
+
+
+</div>
+
+
+
+
+
+
+
 
 </body>
