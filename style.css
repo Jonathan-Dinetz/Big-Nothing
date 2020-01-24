@@ -10,7 +10,7 @@ body {
 
 .myVideo {
   position: fixed;
-  align-self: center;
+  align-self: center center;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -80,15 +80,17 @@ padding:0
 /*desktop large text*/
 
 .wrapper{
-
-  padding-left: 17vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0vw;
+  padding-left: 15vw;
   text-align: left;
-  padding-right: 30vw;
+  padding-right:15vw;
   padding-bottom: 10vw;
 }
 
 .bigtext{
-  font-size: 9vw;
+  font-size: 12vw;
   font-kerning: normal;
   font-family: helvetica;
   font-weight: bold;
@@ -96,6 +98,8 @@ padding:0
   color: white;
   line-height: 1.05;
 }
+
+
 
 .grey {
   background-color:red;
@@ -110,9 +114,10 @@ padding:0
 
 /*destop individual work page*/
 .headerwork {
-  padding-top: 10px;
-  padding-left: 40px;
-  padding-bottom: 10px;
+  padding-top: 1em;
+  padding-left: 2.4em;
+  padding-right: 2em;
+  padding-bottom: 1em;
   width:100%;
   text-align: left;
   display: inline-grid;
@@ -155,19 +160,7 @@ padding:0
 }
 
 .titletopboy {
-  padding-left: 6.5vw;
-  font-size: 48px;
-  font-kerning: normal;
-  font-family: helvetica;
-  font-weight: normal;
-  font-style: oblique;
-  letter-spacing: -.023em;
-  color: black;
-  line-height: 1.05;
-  text-align: left;
-  position: fixed;
-  color: white;
-  letter-spacing: 0.1;
+  padding-top: 8vw;
 }
 .wrappergrid{
   display: grid;
@@ -207,8 +200,11 @@ img {
 
 
 div.purple {
-
+  -moz-column-count:2;
+  -webkit-column-count: 2;
   column-count: 2;
+  -moz-column-gap:1.5em;
+  -webkit-column-gap: 1.5em;
   column-gap: 1.5em;
   padding: 8vw;
   background-color: black;
@@ -224,40 +220,66 @@ div.purple {
 
 }
 
+/* div skew */
+
+/*
+#one{
+  transform: rotateZ(5deg);
+  transition: rotateZ(200ms);
+}
+
+#one:hover{
+  transform: rotateZ(0deg);
+}
+
+
+#two{
+  transform: rotateZ(5deg);
+  transition: rotateZ(200ms);
+}
+#two:hover{
+  transform: rotateZ(0deg);
+}
+
+
+#three{
+  transform: rotateZ(-3deg);
+transition: rotate(200ms);
+}
+#three:hover{
+  transform: rotateZ(0deg);
+}
+
+
+#four{
+  transform: rotateZ(5deg);
+  transition: rotateZ(200ms);
+}
+#four:hover{
+  transform: rotateZ(0deg);
+}
+
+
+#five{
+  transform: rotateZ(-6deg);
+  transition: rotateZ(200ms);
+}
+#five:hover{
+  transform: rotateZ(0deg);
+}
+
+
+#six{
+  transform: rotateZ(-3deg);
+  transition: rotateZ(200ms);
+}
+#six:hover{
+  transform: rotateZ(0deg);
+}
+
+*/
+
 /*all the buttons! */
-
-button {
-    bottom: 30px;
-    left: 6.5vw;
-    position: fixed;
-    color: white;
-    border: none;
-    padding: 0.1rem;
-    margin: 0;
-    font-size: 30px;
-    text-decoration: none;
-    font-family: helvetica;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-    transition:  transform 500ms ease;
-    background: black;
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-}
-
-
-button:focus {
-    outline: 0px solid #fff;
-    outline-offset: -4px;
-}
-
-button:hover {
-    transform: rotate(360deg);
-    background-color: white;
-    color: black;
-}
 
 
 
@@ -283,6 +305,7 @@ button.info {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    z-index: 2;
 }
 
 
@@ -292,9 +315,16 @@ button.info:focus {
 }
 
 button.info:hover {
-    transform: rotate(360deg);
-    background-color: white;
     color: black;
+    background: white;
+    transform: rotate(360deg);
+}
+
+
+
+.whiteback {
+  background: white;
+  color:black
 }
 
 button.contact {
@@ -317,6 +347,7 @@ button.contact {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    z-index: 2;
 }
 
 
@@ -343,20 +374,8 @@ button.contact:hover {
 
 /* switch to mobile */
 
-@media(max-width: 700px) {
+@media(max-width: 1000px) {
 /*nav bar mobile */
-.header {
-  padding-top: 2.5vw;
-  padding-left: 5.5vw;
-  padding-bottom: 2.5vw;
-  width:100%;
-  text-align: left;
-  background-color: none;
-  color:black;
-  font-size: 15px;
-  position: fixed;
-  font-family: helvetica;
-}
 
 .displaynone {
   visibility: hidden;
@@ -364,19 +383,18 @@ button.contact:hover {
 
 /*mobile large text*/
   .bigtext{
-    font-size: 17vw;
+    font-size: 18vw;
     letter-spacing: -.015em;
     font-kerning: normal;
-    line-height: 1;
+    line-height: 1.1;
   }
   .wrapper{
     padding-left: 6.5vw;
     padding-bottom: 15vw;
     text-align: left;
-
-  }
-  .topboy {
-    padding-top: 16vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0vw;
   }
 
   .wrappergrid{
@@ -390,18 +408,27 @@ button.contact:hover {
     padding: 0em;
   }
   .titletopboy {
-    padding-top: 90vh;
-    padding-left: 6.5vw;
-    font-size: 32px;
-    font-kerning: normal;
-    font-family: helvetica;
-    font-weight:normal;
-    font-style: oblique;
-    letter-spacing: -.023em;
-    color: black;
-    line-height: 1.05;
-    text-align: left;
-    position: fixed;
+    padding-top: 25vw;
+  }
+
+  /* mobile info */
+
+  div.purple {
+    -moz-column-count:1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    -moz-column-gap:1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    padding: 8vw;
+    background-color: black;
     color: white;
-    letter-spacing: 0.1;
+    font-family: helvetica;
+    font-size: 38px;
+    font-weight: bold;
+    top:70px;
+    position: absolute;
+    width: 100vw;
+    margin: 0px;
+    line-height: 1.2;
   }
