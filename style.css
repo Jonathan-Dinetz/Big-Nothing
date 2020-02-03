@@ -451,3 +451,8 @@ button.contact:hover {
     height: 130px;
     width: 130px;
   }
+
+  .headerwork {
+    font-size: 15px;
+    padding-left: 5vw;
+  }
