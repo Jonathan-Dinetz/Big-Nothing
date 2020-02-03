@@ -5,14 +5,18 @@
 
 body {
   margin: 0;
-  background: black;
+    display: flex;
+    justify-content: center;
+    z-index: -3;
+    background: black;
 }
 
 .myVideo {
   position: fixed;
   align-self: center center;
-  right: 0;
+  z-index:-1;
   bottom: 0;
+  top:0;
   min-width: 100%;
   min-height: 100%;
   display: cover;
@@ -20,7 +24,6 @@ body {
 
 .content {
   position: relative;
-
 }
 
 
@@ -424,11 +427,27 @@ button.contact:hover {
     background-color: black;
     color: white;
     font-family: helvetica;
-    font-size: 38px;
+    font-size: 20px;
     font-weight: bold;
     top:70px;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     margin: 0px;
     line-height: 1.2;
+  }
+
+  button.info {
+      bottom: 25px;
+      left: 35px;
+      font-size: 25px;
+      height: 130px;
+      width: 130px;
+  }
+
+  button.contact {
+    bottom: 25px;
+    left: 220px;
+    font-size: 25px;
+    height: 130px;
+    width: 130px;
   }
