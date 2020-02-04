@@ -77,7 +77,8 @@ padding:0
 
 
 .bold {
-  font-weight: bold;
+  font-weight: 600;
+  font-size:19.5px;
 }
 
 /*desktop large text*/
@@ -85,21 +86,21 @@ padding:0
 .wrapper{
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0vw;
-  padding-left: 15vw;
+  grid-gap: 0.0vw;
+  padding-left: 12vw;
   text-align: left;
   padding-right:15vw;
   padding-bottom: 10vw;
 }
 
 .bigtext{
-  font-size: 12vw;
+  font-size: 13vw;
   font-kerning: normal;
   font-family: helvetica;
   font-weight: bold;
   letter-spacing: -.023em;
-  color: white;
-  line-height: 1.05;
+  color: #eeeeee;
+  line-height: 1;
 }
 
 
@@ -117,35 +118,40 @@ padding:0
 
 /*destop individual work page*/
 .headerwork {
-  padding-top: 1em;
-  padding-left: 2.4em;
+  padding-top: 0.6em;
+  padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 1em;
+  padding-bottom: 0.6em;
   width:100%;
   text-align: left;
   display: inline-grid;
   grid-template-columns: 2fr 1fr;
-  background-color: white;
-  color:black;
-  font-size: 16px;
+  background-color: black;
+  color:white;
   position: fixed;
   font-family: helvetica;
+  font-size:19.5px;
   z-index: 10;
 }
 #jonathan{
   transition: transform 200ms ease;
+  color: #eeeeee;
+  font-size:19.5px;
+  letter-spacing: 0.1;
 }
 #jonathan:hover {
   transform: skewX(10deg);
-
 }
 
 #about{
-  transition: transform 200ms ease;
+  transition: transform  200ms ease;
+  color:#eeeeee;
+  font-size:19px;
+  font-weight:  500;
 }
+
 #about:hover {
   transform: skewX(10deg);
-
 }
 
 .imagepaddding{
@@ -166,9 +172,8 @@ padding:0
   padding-top: 8vw;
 }
 .wrappergrid{
-  display: grid;
+  display: inline-grid;
   grid-gap:1em;
-  grid-template-columns:3 1fr;
   object-fit: scale-down;
   max-width: 100%;
   height:auto;
@@ -210,8 +215,8 @@ div.purple {
   -webkit-column-gap: 1.5em;
   column-gap: 1.5em;
   padding: 8vw;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: helvetica;
   font-size: 30px;
   font-weight: bold;
@@ -220,6 +225,7 @@ div.purple {
   width: 100vw;
   margin: 0px;
   line-height: 1.2;
+  height: 100%;
 
 }
 
@@ -322,6 +328,8 @@ button.info:hover {
     background: white;
     transform: rotate(360deg);
 }
+
+
 
 
 
@@ -450,9 +458,12 @@ button.contact:hover {
     font-size: 25px;
     height: 130px;
     width: 130px;
+    cursor: url(plus.png), auto;
+}
   }
 
   .headerwork {
     font-size: 15px;
     padding-left: 5vw;
+    position: fixed;
   }

@@ -14,7 +14,7 @@
 
   <div class=headerwork >
     <a href=index.html>
-        <p id=jonathan class='bold'>Jonathan Dinetz</p>
+        <p id=jonathan class='bold'>← Work</p>
     </a>
   <a href='about.html'>
     <p id=about class='black'>About + Contact</p>
@@ -22,9 +22,9 @@
   </div>
 
 
-<button class=info id=info>
-Info
-</button>
+  <button onclick="myFunction()" class='info'>
+  <p id='info'>Info</p>
+  </button>
 
 
 
@@ -51,7 +51,7 @@ Info
 
    I designed this poster in highschool for my friend's student run organization, VOCO, to promote their up-coming guest speaker events.
    The events featured a U.S. Ambassador, a state department offical, and other activists. This student run-organization provided me with the majority
-   of my first poster prompts. 
+   of my first poster prompts.
 
 
 
@@ -66,6 +66,16 @@ Info
   });
   </script>
 
+  <script>
+  function myFunction() {
+  var x = document.getElementById("info");
+  if (x.innerHTML === "Info") {
+    x.innerHTML = "✕";
+  } else {
+    x.innerHTML = "Info";
+  }
+  }
+  </script>
 
 
 </div>

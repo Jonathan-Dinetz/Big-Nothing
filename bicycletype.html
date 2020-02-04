@@ -14,21 +14,16 @@
 
   <div class=headerwork >
 <a href=index.html>
-    <p id=jonathan class='bold'>Jonathan Dinetz</p>
+    <p id=jonathan class='bold'>← Work</p>
 </a>
   <a href='about.html'>
     <p id=about class='black'>About + Contact</p>
   </a>
   </div>
 
-
-<button class=info id=info>
-Info
-</button>
-
-
-
-
+  <button onclick="myFunction()" class='info'>
+  <p id='info'>Info</p>
+  </button>
 
 <div id=body2 class='wrappergrid'>
     <div class='imagepaddding'>
@@ -67,6 +62,16 @@ Info
   </script>
 
 
+  <script>
+  function myFunction() {
+  var x = document.getElementById("info");
+  if (x.innerHTML === "Info") {
+    x.innerHTML = "✕";
+  } else {
+    x.innerHTML = "Info";
+  }
+  }
+  </script>
 
 </div>
 
