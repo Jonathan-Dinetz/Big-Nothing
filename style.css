@@ -373,6 +373,10 @@ button.contact:hover {
     color: black;
 }
 
+.mobilehidden {
+  visibility: none;
+  display: none;
+}
 
 .hidden {
   display: none;
@@ -382,9 +386,7 @@ button.contact:hover {
   display: normal;
 }
 
-.mobilehidden {
-  visibility: none;
-}
+
 
 
 /* switch to mobile */
@@ -467,16 +469,16 @@ button.contact:hover {
 
 
   .headerwork {
-    font-size: 15px;
+    font-size: 14px;
     padding-left: 5vw;
     position: fixed;
-    background: none;
+
   }
 
   #jonathan{
     transition: transform 200ms ease;
     color: #eeeeee;
-    font-size:10px;
+    font-size:14px;
     letter-spacing: 0.1;
   }
   #jonathan:hover {
@@ -486,7 +488,7 @@ button.contact:hover {
   #about{
     transition: transform  200ms ease;
     color:#eeeeee;
-    font-size:10px;
+    font-size:14px;
     font-weight: 500;
   }
 
@@ -496,9 +498,10 @@ button.contact:hover {
 
   .bold {
     font-weight: 600;
-    font-size:10px;
+    font-size:14px;
   }
 
   .mobilehidden {
     visibility: normal;
+    display: normal;
   }
