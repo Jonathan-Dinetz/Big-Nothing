@@ -119,7 +119,7 @@ padding:0
 /*destop individual work page*/
 .headerwork {
   padding-top: 0.6em;
-  padding-left: 2em;
+  padding-left: 2.7em;
   padding-right: 2em;
   padding-bottom: 0.6em;
   width:100%;
@@ -382,10 +382,14 @@ button.contact:hover {
   display: normal;
 }
 
+.mobilehidden {
+  visibility: none;
+}
+
 
 /* switch to mobile */
 
-@media(max-width: 1000px) {
+@media(max-width: 900px) {
 /*nav bar mobile */
 
 .displaynone {
@@ -419,7 +423,7 @@ button.contact:hover {
     padding: 0em;
   }
   .titletopboy {
-    padding-top: 25vw;
+    padding-top: 15vw;
   }
 
   /* mobile info */
@@ -460,10 +464,40 @@ button.contact:hover {
     width: 130px;
     cursor: url(plus.png), auto;
 }
-  }
+
 
   .headerwork {
     font-size: 15px;
     padding-left: 5vw;
     position: fixed;
+  }
+
+  #jonathan{
+    transition: transform 200ms ease;
+    color: #eeeeee;
+    font-size:13px;
+    letter-spacing: 0.1;
+  }
+  #jonathan:hover {
+    transform: skewX(10deg);
+  }
+
+  #about{
+    transition: transform  200ms ease;
+    color:#eeeeee;
+    font-size:13px;
+    font-weight: 500;
+  }
+
+  #about:hover {
+    transform: skewX(10deg);
+  }
+
+  .bold {
+    font-weight: 600;
+    font-size:13px;
+  }
+
+  .mobilehidden {
+    visibility: normal;
   }
