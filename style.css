@@ -470,12 +470,13 @@ button.contact:hover {
     font-size: 15px;
     padding-left: 5vw;
     position: fixed;
+    background: none;
   }
 
   #jonathan{
     transition: transform 200ms ease;
     color: #eeeeee;
-    font-size:13px;
+    font-size:10px;
     letter-spacing: 0.1;
   }
   #jonathan:hover {
@@ -485,7 +486,7 @@ button.contact:hover {
   #about{
     transition: transform  200ms ease;
     color:#eeeeee;
-    font-size:13px;
+    font-size:10px;
     font-weight: 500;
   }
 
@@ -495,7 +496,7 @@ button.contact:hover {
 
   .bold {
     font-weight: 600;
-    font-size:13px;
+    font-size:10px;
   }
 
   .mobilehidden {
