@@ -433,23 +433,26 @@ button.contact:hover {
   div.purple {
     -moz-column-count:1;
     -webkit-column-count: 1;
-    column-count: 1;
+    column-count:1;
     -moz-column-gap:1.5em;
     -webkit-column-gap: 1.5em;
     column-gap: 1.5em;
+
     padding: 8vw;
-    background-color: black;
-    color: white;
+    padding-top: 17vw;
+    background-color: white;
+    color: black;
     font-family: helvetica;
     font-size: 20px;
     font-weight: bold;
-    top:70px;
-    position: fixed;
+    position:fixed;
     width: 100vw;
     margin: 0px;
     line-height: 1.2;
-  }
+    height: 100%;
+    top:0;
 
+  }
   button.info {
       bottom: 25px;
       left: 35px;
@@ -470,17 +473,18 @@ button.contact:hover {
 
   .headerwork {
     font-size:16px;
-    padding-left: 5vw;
+    padding-left:7vw;
     padding-top: 5vw;
     padding-bottom: 5vw;
     position: fixed;
     background: none;
 
+
   }
 
   #jonathan{
     transition: transform 200ms ease;
-    color: #eeeeee;
+    color: white;
     font-size: 16px;
     letter-spacing: 0.1;
   }
@@ -490,7 +494,7 @@ button.contact:hover {
 
   #about{
     transition: transform  200ms ease;
-    color:#eeeeee;
+    color:white;
     font-size:16px;
     font-weight: 500;
   }
