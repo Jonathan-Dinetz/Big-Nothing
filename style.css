@@ -512,3 +512,27 @@ button.contact:hover {
     visibility: normal;
     display: normal;
   }
+
+  button.info:hover {
+      color: white;
+      background: black;
+      transform: none;
+  }
+
+  button.info:active {
+      color: black;
+      background: white;
+      transform: rotate(360deg);
+  }
+
+  button.contact:hover {
+      transform: none;
+      background-color: black;
+      color: white;
+  }
+
+  button.contact:active {
+    color: black;
+    background: white;
+    transform: rotate(360deg);
+  }
