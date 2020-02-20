@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+    <script src="https://kit.fontawesome.com/b8c191b380.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+  <link rel= "stylesheet" href="style.css"/>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="sketch.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Almarai|EB+Garamond|Fira+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <video playsinline autoplay muted loop id=video class='myVideo'>
+    <source src="yes.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+
+  <div id='supergay' class='hidden popup'>
+    <div class='navcenter'>
+      <a class='navitem' href='index.html'> Slavery </a>
+      <a class='navitem'href='ethics.html'> Food Ethics </a>
+      <a class='navitem'href='garbage.html'> Garbage </a>
+      <button class='close shown'> ⌫ </button>
+    </div>
+  </div>
+
+  <div id='show' class='independant'>
+    <button class="none">
+        ⌦
+    </button>
+  </div>
+
+  <div class='header'>
+  Garabage
+  <div>
+
+  <script>
+  $( "button.none" ).click(function() {
+    $( "#supergay" ).slideToggle( "slow", function(){
+      $( "#supergay" ).removeClass( "hidden" )
+    });
+  });
+  </script>
+
+
+  <script>
+  $( "button.close" ).click(function() {
+    $( "#supergay" ).slideToggle( "slow", function(){
+      $( "#supergay" ).addClass( "hidden" )
+    });
+  });
+  </script>
+
+</body>
+
+</html>
